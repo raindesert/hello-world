@@ -1,0 +1,15 @@
+git bash
+
+ssh-keygen -t rsa -b 4096 -C "rain2desert@hotmail.com"
+git init
+git add src
+git commit -m "v1 commit"
+git remote add origin https://github.com/raindesert/hello_world
+git push -u origin master
+git checkout -b "V1"
+git commit
+git checkout master
+git merge V1
+git reflog
+git log
+git reset --hard 0f2616c
